@@ -1,0 +1,13 @@
+{
+  "name": "ayvera-api",
+  "version": "1.0.0",
+  "description": "Ayvera ürün ve marka API sunucusu",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

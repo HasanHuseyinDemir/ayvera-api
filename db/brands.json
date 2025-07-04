@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "name": "Cambox",
+    "logo": "/brands/cambox.jpeg",
+    "website": "https://cambox.com",
+    "description": "Güvenlik kamera sistemleri"
+  },
+  {
+    "id": 2,
+    "name": "Everday",
+    "logo": "/brands/everday.jpeg",
+    "website": "https://everday.com",
+    "description": "Güvenlik çözümleri"
+  },
+  {
+    "id": 3,
+    "name": "Fonri",
+    "logo": "/brands/fonri.jpeg",
+    "website": "https://fonri.com",
+    "description": "Alarm sistemleri"
+  },
+  {
+    "id": 4,
+    "name": "Idex",
+    "logo": "/brands/idex.jpeg",
+    "website": "https://idex.com",
+    "description": "Biyometrik sistemler"
+  },
+  {
+    "id": 5,
+    "name": "Imou",
+    "logo": "/brands/imou.jpeg",
+    "website": "https://imou.com",
+    "description": "IP kamera sistemleri"
+  },
+  {
+    "id": 6,
+    "name": "Kodicom",
+    "logo": "/brands/kodicom.jpeg",
+    "website": "https://kodicom.com",
+    "description": "Video yönetim sistemleri"
+  },
+  {
+    "id": 7,
+    "name": "Radem",
+    "logo": "/brands/radem.jpeg",
+    "website": "https://radem.com",
+    "description": "Güvenlik aparatları"
+  },
+  {
+    "id": 8,
+    "name": "Rubezh",
+    "logo": "/brands/rubezh.jpeg",
+    "website": "https://rubezh.com",
+    "description": "Yangın alarm sistemleri"
+  },
+  {
+    "id": 9,
+    "name": "Teletek",
+    "logo": "/brands/teletek.jpeg",
+    "website": "https://teletek.com",
+    "description": "Alarm ve güvenlik sistemleri"
+  },
+  {
+    "id": 10,
+    "name": "Tiandy",
+    "logo": "/brands/tiandy.jpeg",
+    "website": "https://tiandy.com",
+    "description": "Video gözetleme sistemleri"
+  },
+  {
+    "id": 11,
+    "name": "ZKT",
+    "logo": "/brands/zkt.jpeg",
+    "website": "https://zkteco.com",
+    "description": "Geçiş kontrol ve zaman takip sistemleri"
+  },
+  {
+    "name": "Av Tech",
+    "logo": "/brands/avtech.png",
+    "description": "Kamera Güvenlik",
+    "id": 12
+  }
+]

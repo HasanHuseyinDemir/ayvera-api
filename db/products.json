@@ -1,0 +1,174 @@
+[
+  {
+    "id": 6,
+    "title": "Ses Sistemi Paketi",
+    "desc": "Anons ve müzik sistemi paketi. Hoparlör, mikser ve amplifikatör dahil tam çözüm.",
+    "img": "/stock/ses.png",
+    "category": "Kamera Sistemleri",
+    "brand": "Rubezh",
+    "features": ["sda", "asd", "a"],
+    "driver": "x",
+    "pdf": "xa",
+    "gallery": ["x1a"]
+  },
+  {
+    "id": 7,
+    "title": "Kablo Sistemi Seti",
+    "desc": "Profesyonel kamera sistemi için kablo alt yapı seti. RG59 koaksiyel kablo ve aksesuarlar.",
+    "img": "/stock/kablo.png",
+    "category": "Kamera Sistemleri",
+    "brand": "Av Tech",
+    "features": ["RG59 kablo", "BNC konnektörler", "100m kablo uzunluğu", "Güç adaptörü"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 8,
+    "title": "WiFi Güvenlik Kamerası",
+    "desc": "Kablosuz bağlantılı akıllı güvenlik kamerası. Telefon uygulaması ile canlı izleme.",
+    "img": "/stock/aparat.png",
+    "category": "Kamera Sistemleri",
+    "brand": "Imou",
+    "features": ["WiFi bağlantı", "Canlı izleme", "Hareket tespiti", "Çift yönlü ses", "Bulut kayıt"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 9,
+    "title": "Profesyonel Alarm Sistemi",
+    "desc": "Büyük işletmeler için gelişmiş alarm sistemi. Çoklu sensör desteği ve merkezi izleme.",
+    "img": "/stock/evguvenlik.png",
+    "category": "Alarm Sistemleri",
+    "brand": "Rubezh",
+    "features": ["Çoklu BBBB", "GSM bildirimi", "Sabotaj koruması", "Backup batarya", "Profesyonel kurulum"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 10,
+    "title": "Parmak İzi Okuyucu",
+    "desc": "Yüksek güvenlikli parmak izi tanıma sistemi. Hızlı ve güvenilir erişim kontrolü.",
+    "img": "/stock/gecis.png",
+    "category": "Geçiş Sistemleri",
+    "brand": "ZKT",
+    "features": ["Parmak izi tanıma", "1000 kullanıcı kapasitesi", "TCP/IP bağlantı", "Rapor sistemi", "Su geçirmezdcv"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 11,
+    "title": "Duman Dedektörü",
+    "desc": "Optik duman algılama sensörü. Erken uyarı sistemi ile yangın güvenliği sağlar.",
+    "img": "/stock/yangin.png",
+    "category": "Yangın Sistemleri",
+    "brand": "Fonri",
+    "features": ["Optik sensör", "85dB alarm sesi", "Test butonu", "Düşük batarya uyarısı", "CE sertifikası"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 12,
+    "title": "Outdoor PTZ Kameras",
+    "desc": "Dış mekan için özel tasarlanmış PTZ kamera. 360° dönebilir ve 30x zoom özelliği.",
+    "img": "/stock/cam.png",
+    "category": "",
+    "brand": "Teletek",
+    "features": ["30x zoom", "360° pan/tilt", "IP66 koruması", "Auto tracking", "Preset pozisyonlar", "xxx"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 14,
+    "title": "Güvenlik Sensörü",
+    "desc": "PIR hareket algılama sensörü. İç mekan güvenliği için hassas hareket tespiti sağlar.",
+    "img": "/stock/aparat.png",
+    "category": "Güvenlik Aparatları",
+    "brand": "Teletek",
+    "driver": "",
+    "pdf": "https://example.com/manual.pdf",
+    "features": ["PIR teknolojisi", "12m algılama menzili", "Ayarlanabilir hassasiyet", "Tamper koruması", "Düşük güç tüketimi"]
+  },
+  {
+    "id": 15,
+    "title": "Manyetik Kapı Sensörü",
+    "desc": "Kapı ve pencere güvenliği için manyetik contact sensörü. Açılma anında uyarı verir.",
+    "img": "/stock/aparat.png",
+    "category": "Güvenlik Aparatları",
+    "brand": "Fonri",
+    "features": ["Manyetik contact", "Gizli montaj", "Yüksek güvenilirlik", "Hava koşullarına dayanıklı", "Kolay kurulum"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 16,
+    "title": "Siren ve Flaşör",
+    "desc": "Güvenlik sistemleri için sesli ve ışıklı uyarı cihazı. Caydırıcı etki sağlar.",
+    "img": "/stock/aparat.png",
+    "category": "Güvenlik Aparatları",
+    "brand": "Radem",
+    "features": ["120dB ses seviyesi", "LED strobo flaş", "Tamper koruması", "Dış mekan uyumlu", "Backup batarya"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 17,
+    "title": "Kablosuz Keypad",
+    "desc": "Güvenlik sistemi için kablosuz şifreli klavye. Uzaktan sistem kontrolü sağlar.",
+    "img": "/stock/aparat.png",
+    "category": "Güvenlik Aparatları",
+    "brand": "Idex",
+    "features": ["Kablosuz bağlantı", "LCD ekran", "Çoklu kullanıcı kodu", "Duress kod", "Backlight özelliği"],
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "title": "asd",
+    "desc": "sad",
+    "category": "",
+    "brand": "Everday",
+    "img": "/stock/camera.png",
+    "features": ["aaa"],
+    "id": 18,
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "title": "asdsa",
+    "desc": "asdasd",
+    "category": "Kamera Sistemleri",
+    "brand": "Cambox",
+    "img": "/stock/camera.png",
+    "features": ["sad", "asd", "das", "zzz"],
+    "id": 19,
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "title": "Av Tech 1105",
+    "desc": ".",
+    "category": "Kamera Sistemleri",
+    "brand": "Av Tech",
+    "img": "https://ayvera.com.tr/Resim/Minik/1500x1000_thumb_st00774.png",
+    "features": ["Ahd", "2MP Çözünürlük", "Bullet Kamera"],
+    "id": 20,
+    "driver": "",
+    "pdf": ""
+  },
+  {
+    "id": 1001,
+    "title": "Örnek Galerili Kamera",
+    "desc": "Demo ürünü: Galeri desteği ve tüm alanlar dolu. Modern Qwik galeri gösterimi için örnek.",
+    "img": "/stock/camera.png",
+    "category": "Kamera Sistemleri",
+    "brand": "Av Tech",
+    "features": ["4K Ultra HD", "Gece görüşü", "IP66 dış ortam", "Mobil uygulama", "Yapay zeka hareket algılama"],
+    "driver": "https://example.com/drivers/ornek-driver.zip",
+    "pdf": "https://example.com/manuals/ornek-manual.pdf",
+    "gallery": [
+      "/stock/aparat.png",
+      "/stock/aparat.png",
+      "/stock/evguvenlik.png",
+      "/stock/gecis.png"
+    ]
+  }
+]
