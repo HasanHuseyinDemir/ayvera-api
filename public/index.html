@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayvera API - Yönetim Paneli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #2c3e50 !important;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            transition: all 0.2s ease-in-out;
+        }
+        .card:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+        .btn-primary {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        .table th {
+            background-color: #34495e;
+            color: white;
+            border: none;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #3498db;
+            border-color: #3498db;
+            color: white;
+        }
+        .form-label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .alert {
+            border: none;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-cogs me-2"></i>
+                Ayvera API - Yönetim Paneli
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Alert mesajları -->
+        <div id="alertContainer"></div>
+
+        <!-- Tab Navigation -->
+        <ul class="nav nav-tabs" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="products-tab" data-bs-toggle="tab" data-bs-target="#products" 
+                        type="button" role="tab">
+                    <i class="fas fa-box me-2"></i>Ürünler
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="brands-tab" data-bs-toggle="tab" data-bs-target="#brands" 
+                        type="button" role="tab">
+                    <i class="fas fa-tags me-2"></i>Markalar
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="mainTabsContent">
+            <!-- Ürünler Tab -->
+            <div class="tab-pane fade show active" id="products" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-plus me-2"></i>Ürün Ekle/Düzenle</h5>
+                            </div>
+                            <div class="card-body">
+                                <form id="productForm">
+                                    <input type="hidden" id="productId">
+                                    <div class="mb-3">
+                                        <label for="productTitle" class="form-label">Ürün Adı*</label>
+                                        <input type="text" class="form-control" id="productTitle" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productDesc" class="form-label">Açıklama*</label>
+                                        <textarea class="form-control" id="productDesc" rows="3" required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productImg" class="form-label">Resim URL</label>
+                                        <input type="text" class="form-control" id="productImg">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productCategory" class="form-label">Kategori</label>
+                                        <input type="text" class="form-control" id="productCategory">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productBrand" class="form-label">Marka</label>
+                                        <select class="form-control" id="productBrand">
+                                            <option value="">Marka Seçin</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productFeatures" class="form-label">Özellikler (virgülle ayırın)</label>
+                                        <input type="text" class="form-control" id="productFeatures">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productDriver" class="form-label">Driver</label>
+                                        <input type="text" class="form-control" id="productDriver">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productPdf" class="form-label">PDF Link</label>
+                                        <input type="text" class="form-control" id="productPdf">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productGallery" class="form-label">Galeri (virgülle ayırın)</label>
+                                        <input type="text" class="form-control" id="productGallery">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-save me-2"></i>Kaydet
+                                    </button>
+                                    <button type="button" class="btn btn-secondary w-100 mt-2" onclick="clearProductForm()">
+                                        <i class="fas fa-times me-2"></i>Temizle
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0"><i class="fas fa-list me-2"></i>Ürün Listesi</h5>
+                                <button class="btn btn-sm btn-outline-primary" onclick="loadProducts()">
+                                    <i class="fas fa-sync me-1"></i>Yenile
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Resim</th>
+                                                <th>Ürün Adı</th>
+                                                <th>Kategori</th>
+                                                <th>Marka</th>
+                                                <th>İşlemler</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="productsTableBody">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Markalar Tab -->
+            <div class="tab-pane fade" id="brands" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-plus me-2"></i>Marka Ekle/Düzenle</h5>
+                            </div>
+                            <div class="card-body">
+                                <form id="brandForm">
+                                    <input type="hidden" id="brandId">
+                                    <div class="mb-3">
+                                        <label for="brandName" class="form-label">Marka Adı*</label>
+                                        <input type="text" class="form-control" id="brandName" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="brandLogo" class="form-label">Logo URL</label>
+                                        <input type="text" class="form-control" id="brandLogo">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="brandWebsite" class="form-label">Website</label>
+                                        <input type="url" class="form-control" id="brandWebsite">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="brandDescription" class="form-label">Açıklama</label>
+                                        <textarea class="form-control" id="brandDescription" rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-save me-2"></i>Kaydet
+                                    </button>
+                                    <button type="button" class="btn btn-secondary w-100 mt-2" onclick="clearBrandForm()">
+                                        <i class="fas fa-times me-2"></i>Temizle
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0"><i class="fas fa-list me-2"></i>Marka Listesi</h5>
+                                <button class="btn btn-sm btn-outline-primary" onclick="loadBrands()">
+                                    <i class="fas fa-sync me-1"></i>Yenile
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Logo</th>
+                                                <th>Marka Adı</th>
+                                                <th>Website</th>
+                                                <th>İşlemler</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="brandsTableBody">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

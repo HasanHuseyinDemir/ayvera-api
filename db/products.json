@@ -6,10 +6,16 @@
     "img": "/stock/ses.png",
     "category": "Kamera Sistemleri",
     "brand": "Rubezh",
-    "features": ["sda", "asd", "a"],
+    "features": [
+      "sda",
+      "asd",
+      "a"
+    ],
     "driver": "x",
     "pdf": "xa",
-    "gallery": ["x1a"]
+    "gallery": [
+      "x1a"
+    ]
   },
   {
     "id": 7,
@@ -18,9 +24,15 @@
     "img": "/stock/kablo.png",
     "category": "Kamera Sistemleri",
     "brand": "Av Tech",
-    "features": ["RG59 kablo", "BNC konnektörler", "100m kablo uzunluğu", "Güç adaptörü"],
+    "features": [
+      "RG59 kablo",
+      "BNC konnektörler",
+      "100m kablo uzunluğu",
+      "Güç adaptörü"
+    ],
     "driver": "",
-    "pdf": ""
+    "pdf": "",
+    "gallery": []
   },
   {
     "id": 8,
@@ -29,7 +41,13 @@
     "img": "/stock/aparat.png",
     "category": "Kamera Sistemleri",
     "brand": "Imou",
-    "features": ["WiFi bağlantı", "Canlı izleme", "Hareket tespiti", "Çift yönlü ses", "Bulut kayıt"],
+    "features": [
+      "WiFi bağlantı",
+      "Canlı izleme",
+      "Hareket tespiti",
+      "Çift yönlü ses",
+      "Bulut kayıt"
+    ],
     "driver": "",
     "pdf": ""
   },
@@ -40,7 +58,13 @@
     "img": "/stock/evguvenlik.png",
     "category": "Alarm Sistemleri",
     "brand": "Rubezh",
-    "features": ["Çoklu BBBB", "GSM bildirimi", "Sabotaj koruması", "Backup batarya", "Profesyonel kurulum"],
+    "features": [
+      "Çoklu BBBB",
+      "GSM bildirimi",
+      "Sabotaj koruması",
+      "Backup batarya",
+      "Profesyonel kurulum"
+    ],
     "driver": "",
     "pdf": ""
   },
@@ -51,7 +75,13 @@
     "img": "/stock/gecis.png",
     "category": "Geçiş Sistemleri",
     "brand": "ZKT",
-    "features": ["Parmak izi tanıma", "1000 kullanıcı kapasitesi", "TCP/IP bağlantı", "Rapor sistemi", "Su geçirmezdcv"],
+    "features": [
+      "Parmak izi tanıma",
+      "1000 kullanıcı kapasitesi",
+      "TCP/IP bağlantı",
+      "Rapor sistemi",
+      "Su geçirmezdcv"
+    ],
     "driver": "",
     "pdf": ""
   },
@@ -62,7 +92,13 @@
     "img": "/stock/yangin.png",
     "category": "Yangın Sistemleri",
     "brand": "Fonri",
-    "features": ["Optik sensör", "85dB alarm sesi", "Test butonu", "Düşük batarya uyarısı", "CE sertifikası"],
+    "features": [
+      "Optik sensör",
+      "85dB alarm sesi",
+      "Test butonu",
+      "Düşük batarya uyarısı",
+      "CE sertifikası"
+    ],
     "driver": "",
     "pdf": ""
   },
@@ -73,7 +109,14 @@
     "img": "/stock/cam.png",
     "category": "",
     "brand": "Teletek",
-    "features": ["30x zoom", "360° pan/tilt", "IP66 koruması", "Auto tracking", "Preset pozisyonlar", "xxx"],
+    "features": [
+      "30x zoom",
+      "360° pan/tilt",
+      "IP66 koruması",
+      "Auto tracking",
+      "Preset pozisyonlar",
+      "xxx"
+    ],
     "driver": "",
     "pdf": ""
   },
@@ -86,7 +129,13 @@
     "brand": "Teletek",
     "driver": "",
     "pdf": "https://example.com/manual.pdf",
-    "features": ["PIR teknolojisi", "12m algılama menzili", "Ayarlanabilir hassasiyet", "Tamper koruması", "Düşük güç tüketimi"]
+    "features": [
+      "PIR teknolojisi",
+      "12m algılama menzili",
+      "Ayarlanabilir hassasiyet",
+      "Tamper koruması",
+      "Düşük güç tüketimi"
+    ]
   },
   {
     "id": 15,
@@ -95,7 +144,13 @@
     "img": "/stock/aparat.png",
     "category": "Güvenlik Aparatları",
     "brand": "Fonri",
-    "features": ["Manyetik contact", "Gizli montaj", "Yüksek güvenilirlik", "Hava koşullarına dayanıklı", "Kolay kurulum"],
+    "features": [
+      "Manyetik contact",
+      "Gizli montaj",
+      "Yüksek güvenilirlik",
+      "Hava koşullarına dayanıklı",
+      "Kolay kurulum"
+    ],
     "driver": "",
     "pdf": ""
   },
@@ -106,7 +161,13 @@
     "img": "/stock/aparat.png",
     "category": "Güvenlik Aparatları",
     "brand": "Radem",
-    "features": ["120dB ses seviyesi", "LED strobo flaş", "Tamper koruması", "Dış mekan uyumlu", "Backup batarya"],
+    "features": [
+      "120dB ses seviyesi",
+      "LED strobo flaş",
+      "Tamper koruması",
+      "Dış mekan uyumlu",
+      "Backup batarya"
+    ],
     "driver": "",
     "pdf": ""
   },
@@ -117,29 +178,13 @@
     "img": "/stock/aparat.png",
     "category": "Güvenlik Aparatları",
     "brand": "Idex",
-    "features": ["Kablosuz bağlantı", "LCD ekran", "Çoklu kullanıcı kodu", "Duress kod", "Backlight özelliği"],
-    "driver": "",
-    "pdf": ""
-  },
-  {
-    "title": "asd",
-    "desc": "sad",
-    "category": "",
-    "brand": "Everday",
-    "img": "/stock/camera.png",
-    "features": ["aaa"],
-    "id": 18,
-    "driver": "",
-    "pdf": ""
-  },
-  {
-    "title": "asdsa",
-    "desc": "asdasd",
-    "category": "Kamera Sistemleri",
-    "brand": "Cambox",
-    "img": "/stock/camera.png",
-    "features": ["sad", "asd", "das", "zzz"],
-    "id": 19,
+    "features": [
+      "Kablosuz bağlantı",
+      "LCD ekran",
+      "Çoklu kullanıcı kodu",
+      "Duress kod",
+      "Backlight özelliği"
+    ],
     "driver": "",
     "pdf": ""
   },
@@ -149,7 +194,11 @@
     "category": "Kamera Sistemleri",
     "brand": "Av Tech",
     "img": "https://ayvera.com.tr/Resim/Minik/1500x1000_thumb_st00774.png",
-    "features": ["Ahd", "2MP Çözünürlük", "Bullet Kamera"],
+    "features": [
+      "Ahd",
+      "2MP Çözünürlük",
+      "Bullet Kamera"
+    ],
     "id": 20,
     "driver": "",
     "pdf": ""
@@ -161,7 +210,13 @@
     "img": "/stock/camera.png",
     "category": "Kamera Sistemleri",
     "brand": "Av Tech",
-    "features": ["4K Ultra HD", "Gece görüşü", "IP66 dış ortam", "Mobil uygulama", "Yapay zeka hareket algılama"],
+    "features": [
+      "4K Ultra HD",
+      "Gece görüşü",
+      "IP66 dış ortam",
+      "Mobil uygulama",
+      "Yapay zeka hareket algılama"
+    ],
     "driver": "https://example.com/drivers/ornek-driver.zip",
     "pdf": "https://example.com/manuals/ornek-manual.pdf",
     "gallery": [
