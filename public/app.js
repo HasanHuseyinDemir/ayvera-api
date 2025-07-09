@@ -7,14 +7,41 @@ let brands = [];
 
 // Sayfa yüklendiğinde çalışacak fonksiyonlar
 document.addEventListener('DOMContentLoaded', function() {
-    loadProducts();
-    loadBrands();
-    loadBrandOptions();
-    
-    // Form submit event listeners
-    document.getElementById('productForm').addEventListener('submit', handleProductSubmit);
-    document.getElementById('brandForm').addEventListener('submit', handleBrandSubmit);
+    // IP kontrolü yap ve paneli otomatik yükle
+    checkIPAndLoadPanel();
 });
+
+// IP kontrolü ve panel yükleme
+async function checkIPAndLoadPanel() {
+    try {
+        const response = await fetch(`${API_BASE}/auth/check-ip`);
+        const data = await response.json();
+        
+        if (data.success) {
+            // IP izinli - paneli göster
+            document.getElementById('accessDeniedContainer').style.display = 'none';
+            document.getElementById('panelContainer').style.display = 'block';
+            
+            // Panel içeriğini yükle
+            loadProducts();
+            loadBrands();
+            loadBrandOptions();
+            
+            // Form event listeners
+            document.getElementById('productForm').addEventListener('submit', handleProductSubmit);
+            document.getElementById('brandForm').addEventListener('submit', handleBrandSubmit);
+        } else {
+            // IP izinli değil - uyarı göster
+            document.getElementById('currentIP').textContent = data.ip || 'Bilinmiyor';
+            document.getElementById('panelContainer').style.display = 'none';
+            document.getElementById('accessDeniedContainer').style.display = 'block';
+        }
+    } catch (error) {
+        showAlert('IP kontrolü başarısız: ' + error.message, 'danger');
+        document.getElementById('panelContainer').style.display = 'none';
+        document.getElementById('accessDeniedContainer').style.display = 'block';
+    }
+}
 
 // Alert gösterme fonksiyonu
 function showAlert(message, type = 'success') {

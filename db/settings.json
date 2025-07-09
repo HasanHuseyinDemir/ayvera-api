@@ -1,1 +1,8 @@
-[]
+{
+  "password": "$2b$10$example.hash.for.admin.password",
+  "allowedIPs": [
+    "127.0.0.1",
+    "::1",
+    "localhost"
+  ]
+}

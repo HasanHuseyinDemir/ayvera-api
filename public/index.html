@@ -51,14 +51,34 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="fas fa-cogs me-2"></i>
-                Ayvera API - Yönetim Paneli
-            </a>
+    <!-- İP ERİŞİM UYARISI -->
+    <div id="accessDeniedContainer" class="container" style="display: none;">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card border-danger">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4><i class="fas fa-ban me-2"></i>Erişim Reddedildi</h4>
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="lead">Bu IP adresinden yönetim paneline erişim izniniz bulunmamaktadır.</p>
+                        <p class="text-muted">Mevcut IP adresiniz: <strong id="currentIP"></strong></p>
+                        <p class="text-muted">Erişim için sistem yöneticinizle iletişime geçin.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+
+    <!-- MAIN PANEL CONTAINER -->
+    <div id="panelContainer">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-cogs me-2"></i>
+                    Ayvera API - Yönetim Paneli
+                </a>
+            </div>
+        </nav>
 
     <div class="container mt-4">
         <!-- Alert mesajları -->
@@ -236,8 +256,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div>            </div>
         </div>
     </div>
 
